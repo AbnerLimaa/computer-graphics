@@ -15,7 +15,8 @@ class Camera
 
     public:
         Camera();
-        Camera(Ponto ponto);
+        Camera(Ponto origem, Ponto ponto);
+        Ponto getOrigem();
         void lookAt(Ponto ponto);
         Raio lancarRaio(Ponto ponto, int altura, int largura);
 };

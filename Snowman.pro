@@ -32,7 +32,10 @@ SOURCES += \
     camera.cpp \
     esfera.cpp \
     ponto.cpp \
-    janela.cpp
+    janela.cpp \
+    luz.cpp \
+    iluminacao.cpp \
+    material.cpp
 
 HEADERS += \
         programa.h \
@@ -42,7 +45,10 @@ HEADERS += \
     esfera.h \
     ponto.h \
     janela.h \
-    cor.h
+    cor.h \
+    luz.h \
+    iluminacao.h \
+    material.h
 
 FORMS += \
         programa.ui

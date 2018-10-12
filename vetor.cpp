@@ -73,3 +73,8 @@ Vetor Vetor::normalizar()
 {
     return dividir(norma());
 }
+
+Vetor Vetor::produtoArroba(Vetor vetor)
+{
+    return Vetor(this->x * vetor.getX(), this->y * vetor.getY(), this->z * vetor.getZ());
+}

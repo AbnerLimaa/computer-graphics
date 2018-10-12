@@ -1,15 +1,21 @@
 #include "camera.h"
+#include "programa.h"
 
 Camera::Camera()
 {
     this->o = Ponto();
-    this->janela = Janela(100, 100, 1);
 }
 
-Camera::Camera(Ponto ponto)
+Camera::Camera(Ponto origem, Ponto ponto)
 {
-    Camera();
+    this->o = origem;
+    this->janela = Janela(Programa::altura, Programa::largura, this->o.getZ() + 100);
     lookAt(ponto);
+}
+
+Ponto Camera::getOrigem()
+{
+    return this->o;
 }
 
 void Camera::lookAt(Ponto ponto)

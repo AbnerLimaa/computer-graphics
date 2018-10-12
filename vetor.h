@@ -20,6 +20,7 @@ class Vetor
         Vetor dividir(float k);
         float norma();
         Vetor normalizar();
+        Vetor produtoArroba(Vetor vetor);
 };
 
 #endif // VETOR_H

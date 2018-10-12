@@ -7,10 +7,11 @@ Esfera::Esfera()
 
 }
 
-Esfera::Esfera(Ponto centro, float raio)
+Esfera::Esfera(Ponto centro, float raio, Material material)
 {
     this->c = centro;
     this->r = raio;
+    this->m = material;
 }
 
 Ponto Esfera::getCentro()
@@ -21,6 +22,11 @@ Ponto Esfera::getCentro()
 float Esfera::getRaio()
 {
     return this->r;
+}
+
+Material Esfera::getMaterial()
+{
+    return this->m;
 }
 
 bool Esfera::intercepta(Raio raio, float *t)
@@ -44,4 +50,9 @@ bool Esfera::intercepta(Raio raio, float *t)
         return false;
     *t = menor;
     return true;
+}
+
+Vetor Esfera::normal(Ponto ponto)
+{
+    return ponto.subtrair(this->c).normalizar();
 }

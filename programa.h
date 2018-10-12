@@ -6,6 +6,7 @@
 class Programa
 {
     public:
+        const static int largura = 500, altura = 500;
         Programa();
         void show();
         static void desenharCenario(void);
