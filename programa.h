@@ -1,8 +1,6 @@
 #ifndef PROGRAMA_H
 #define PROGRAMA_H
 
-#include <QWidget>
-
 class Programa
 {
     public:

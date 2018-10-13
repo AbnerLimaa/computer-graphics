@@ -9,7 +9,8 @@ Camera::Camera()
 Camera::Camera(Ponto origem, Ponto ponto)
 {
     this->o = origem;
-    this->janela = Janela(Programa::altura, Programa::largura, this->o.getZ() + 100);
+    //this->janela = Janela(Programa::altura, Programa::largura, this->o.getZ() + 100);
+    this->janela = Janela(2, 2, 0);
     lookAt(ponto);
 }
 
