@@ -31,21 +31,6 @@ void Programa::setup(void)
 
 void Programa::desenharCenario(void)
 {
-    /*Camera camera(Ponto(1, 1, -1), Ponto(1, 1, 0));
-    Luz luz(Vetor(1, 1, 1), Ponto(2, 2, 0.5));
-    Vetor background(0.894f, 0.956f, 0.988f);
-    Material neve(Vetor(0, 0, 0), Vetor(1, 1, 1), Vetor(0.3f, 0.3f, 0.3f), 2);
-    Material pedra(Vetor(0, 0, 0), Vetor(0, 0, 0), Vetor(0.3f, 0.3f, 0.3f), 2);
-    Material cenoura(Vetor(1, 0.498f, 0.313f), Vetor(0, 0, 0), Vetor(0.1f, 0.1f, 0.1f), 2);
-    Esfera corpo(Ponto(1, 1, 0.5), 0.5f, neve);
-    Esfera cabeca(Ponto(1, 1.5, 0.5), 0.3f, neve);
-    Esfera olho1(Ponto(0.9, 1.55, 0.22), 0.03f, pedra);
-    Esfera olho2(Ponto(1.1, 1.55, 0.22), 0.03f, pedra);
-    Esfera nariz(Ponto(1, 1.5, 0.2), 0.03f, cenoura);
-    Esfera botao1(Ponto(1, 1.21, 0.047f), 0.03f, pedra);
-    Esfera botao2(Ponto(1, 1, 0), 0.03f, pedra);
-    Esfera botao3(Ponto(1, 0.79, 0.047f), 0.03f, pedra);
-    Esfera snowman[] = { corpo, cabeca, olho1, olho2, nariz, botao1, botao2, botao3 };*/
     glClear(GL_COLOR_BUFFER_BIT);
     glEnable(GL_PROGRAM_POINT_SIZE_EXT);
     glPointSize(1);

@@ -30,5 +30,4 @@ Vetor Iluminacao::calcularIluminacao(Ponto ponto, Ponto origem, Vetor normal, Lu
 
     Vetor cor = difusa.somar(especular).somar(ambiente);
     return cor;
-    //return difusa;
 }
